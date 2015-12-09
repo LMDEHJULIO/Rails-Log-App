@@ -11,15 +11,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151209033606) do
+ActiveRecord::Schema.define(version: 20151209043208) do
 
   create_table "workouts", force: :cascade do |t|
-    t.time     "date"
     t.string   "workout"
     t.string   "mood"
     t.string   "length"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.datetime "date"
   end
 
 end
