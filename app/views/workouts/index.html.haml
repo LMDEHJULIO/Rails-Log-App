@@ -1,1 +1,5 @@
-%h1 Hello World
+- @workouts.each do |workout|
+	%h1= workout.workout
+	%p= link_to workout.date, workout
+	%p= workout.length
+	%p= workout.mood
