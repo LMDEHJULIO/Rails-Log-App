@@ -1,5 +1,5 @@
 - @workouts.each do |workout|
-	%h1= workout.workout
-	%p= link_to workout.date, workout
+	%h1= link_to workout.date.strftime("%A %B %d"), workout
+	%h2= workout.workout
 	%p= workout.length
 	%p= workout.mood
